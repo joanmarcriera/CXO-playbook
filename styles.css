@@ -205,6 +205,23 @@ main {
   color: var(--muted);
 }
 
+.hero-note {
+  max-width: 64ch;
+  margin: 18px 0 0;
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.hero-note a,
+.ecosystem-path a,
+.site-runtime a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-color: rgba(14, 92, 99, 0.3);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -246,6 +263,12 @@ main {
   border: 1px solid rgba(24, 35, 40, 0.12);
   background: rgba(255, 251, 244, 0.72);
   color: var(--ink);
+}
+
+.button-tertiary {
+  border: 1px solid rgba(14, 92, 99, 0.22);
+  background: rgba(14, 92, 99, 0.08);
+  color: var(--teal);
 }
 
 .hero-panel {
@@ -328,6 +351,7 @@ main {
 }
 
 .principle-grid,
+.ecosystem-grid,
 .mode-grid,
 .operating-grid,
 .team-grid,
@@ -341,6 +365,7 @@ main {
 }
 
 .principle-card,
+.site-card,
 .mode-card,
 .operating-card,
 .team-card,
@@ -353,6 +378,7 @@ main {
 }
 
 .principle-card,
+.site-card,
 .mode-card,
 .operating-card,
 .team-card,
@@ -360,6 +386,66 @@ main {
 .search-note {
   padding: 22px;
   background: rgba(255, 251, 244, 0.72);
+}
+
+.ecosystem-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.site-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background:
+    linear-gradient(180deg, rgba(255, 251, 244, 0.94), rgba(247, 239, 228, 0.84)),
+    linear-gradient(135deg, rgba(211, 166, 84, 0.08), rgba(14, 92, 99, 0.05));
+}
+
+.site-card-current {
+  background:
+    linear-gradient(180deg, rgba(240, 250, 248, 0.96), rgba(233, 244, 241, 0.88)),
+    linear-gradient(135deg, rgba(14, 92, 99, 0.11), rgba(196, 109, 79, 0.08));
+  border-color: rgba(14, 92, 99, 0.22);
+}
+
+.site-domain {
+  margin: 0;
+  color: var(--teal);
+  font-family: "Avenir Next Condensed", "Franklin Gothic Medium", "Arial Narrow", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.site-guidance,
+.site-runtime {
+  padding-top: 14px;
+  border-top: 1px solid rgba(24, 35, 40, 0.08);
+}
+
+.site-runtime {
+  font-size: 0.96rem;
+}
+
+.site-actions {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.site-actions .button {
+  width: auto;
+}
+
+.ecosystem-path {
+  margin: 18px 0 0;
+  padding: 18px 22px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 247, 237, 0.72);
+  border: 1px solid rgba(196, 109, 79, 0.14);
+  color: var(--muted);
 }
 
 .navigator-shell {
@@ -516,6 +602,40 @@ main {
     rgba(255, 251, 244, 0.72);
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(24, 35, 40, 0.12);
+  background: rgba(255, 251, 244, 0.82);
+  color: var(--ink);
+  font-family: "Avenir Next Condensed", "Franklin Gothic Medium", "Arial Narrow", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(14, 92, 99, 0.28);
+  color: var(--teal);
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -532,6 +652,7 @@ main {
 @media (max-width: 1080px) {
   .hero,
   .navigator-shell,
+  .ecosystem-grid,
   .mode-grid,
   .operating-grid,
   .team-grid,
