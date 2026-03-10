@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTO Playbook</title>
+    <meta name="theme-color" content="#f4efe4" />
+    <meta
+      name="description"
+      content="A field guide for CTO and CXO leadership: strategy, culture, product, governance, partnerships, and learning."
+    />
+    <link rel="canonical" href="https://cxo.riera.co.uk/" />
+    <meta property="og:title" content="CTO Playbook" />
+    <meta
+      property="og:description"
+      content="A field guide for CTO and CXO leadership: strategy, culture, product, governance, partnerships, and learning."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cxo.riera.co.uk/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#top">
+          <span class="brand-mark">C</span>
+          <span class="brand-copy">
+            <strong>CTO Playbook</strong>
+            <span>Technical leadership, widened</span>
+          </span>
+        </a>
+        <nav class="topnav">
+          <a href="#navigator">Navigator</a>
+          <a href="#modes">Project Modes</a>
+          <a href="#operating">Operating System</a>
+          <a href="#learning">Learning Loops</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero reveal is-visible" id="top">
+          <div class="hero-copy">
+            <p class="eyebrow">CTO / CXO Field Guide</p>
+            <h1>
+              I want technical organisations to work like well-designed systems,
+              not collections of heroic exceptions.
+            </h1>
+            <p class="lede">
+              I come from deep technical work. What I want now is bigger than
+              architecture or delivery alone: strategy that becomes execution,
+              services people can trust, product decisions grounded in real user
+              friction, and an environment where high performers can do their
+              best work without burning themselves out.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#navigator">Open the navigator</a>
+              <a class="button button-secondary" href="#modes">See the delivery modes</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <p class="panel-label">What changes as scope widens</p>
+            <div class="shift-grid">
+              <article>
+                <span>01</span>
+                <h2>Local optimisation</h2>
+                <p>becomes portfolio judgement and explicit trade-offs.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h2>Tool choice</h2>
+                <p>becomes service design, adoption, and operating quality.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h2>Control</h2>
+                <p>becomes context design, incentives, and clear interfaces.</p>
+              </article>
+              <article>
+                <span>04</span>
+                <h2>Heroics</h2>
+                <p>must become repeatable systems that scale beyond one expert.</p>
+              </article>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Executive reality</p>
+            <h2>The role gets harder in predictable ways</h2>
+            <p>
+              Most technical leadership pain is not random. It shows up where
+              strategy, culture, delivery, product, partnerships, and learning
+              collide. The job is to see those tensions early and design around
+              them.
+            </p>
+          </div>
+
+          <div class="principle-grid">
+            <article class="principle-card">
+              <p class="principle-tag">Strategy</p>
+              <h3>Translate ambition into concrete outcomes.</h3>
+              <p>
+                Vision is cheap. Strategy matters when teams can explain what
+                changes, what gets deprioritised, and what success looks like.
+              </p>
+            </article>
+            <article class="principle-card">
+              <p class="principle-tag">Culture</p>
+              <h3>Name the culture you have before trying to shape the one you want.</h3>
+              <p>
+                Culture is not a slide. It is what the system rewards, tolerates,
+                and hides.
+              </p>
+            </article>
+            <article class="principle-card">
+              <p class="principle-tag">Execution</p>
+              <h3>Pick a management model that matches uncertainty.</h3>
+              <p>
+                Not every project is an execution project. Some are change
+                projects. Some are search problems.
+              </p>
+            </article>
+            <article class="principle-card">
+              <p class="principle-tag">Service</p>
+              <h3>User friction is technical debt with a different accent.</h3>
+              <p>
+                If a service is confusing, fragile, or impossible to support, the
+                architecture is not finished yet.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal" id="navigator">
+          <div class="section-heading">
+            <p class="eyebrow">Pressure Map</p>
+            <h2>Use the navigator when the role starts pulling in six directions at once</h2>
+            <p>
+              Each pressure point has recurring failure modes. Good CTO work is
+              often less about inventing a new answer than about recognising the
+              pattern fast and responding with discipline.
+            </p>
+          </div>
+
+          <div class="navigator-shell">
+            <div class="navigator-buttons" id="navigator-buttons" aria-label="Pressure point selector"></div>
+            <article class="navigator-panel">
+              <p class="panel-kicker" id="panel-kicker"></p>
+              <h3 id="panel-title"></h3>
+              <p class="panel-summary" id="panel-summary"></p>
+              <div class="panel-columns">
+                <section>
+                  <h4>Failure modes</h4>
+                  <ul id="panel-traps"></ul>
+                </section>
+                <section>
+                  <h4>Leadership moves</h4>
+                  <ul id="panel-moves"></ul>
+                </section>
+                <section>
+                  <h4>Healthy signals</h4>
+                  <ul id="panel-signals"></ul>
+                </section>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal" id="modes">
+          <div class="section-heading">
+            <p class="eyebrow">Project Topology</p>
+            <h2>Choose the management posture before you choose the toolset</h2>
+            <p>
+              A large share of executive pain comes from misdiagnosing the type
+              of project. The wrong governance model creates delays, false
+              certainty, and expensive theatre.
+            </p>
+          </div>
+
+          <div class="mode-grid">
+            <article class="mode-card">
+              <p class="mode-label">Execution</p>
+              <h3>Known outcome, limited novelty</h3>
+              <p>
+                The target is clear. The main job is coordination, quality
+                control, and disciplined delivery.
+              </p>
+              <ul>
+                <li>Use standards, milestones, and reliable metrics.</li>
+                <li>Keep dependencies visible and owners named.</li>
+                <li>Do not confuse flexibility with lack of control.</li>
+              </ul>
+            </article>
+            <article class="mode-card">
+              <p class="mode-label">Change</p>
+              <h3>Technical solution may be known, adoption is not</h3>
+              <p>
+                The hard part is often beneath the waterline: stakeholder
+                networks, power, habits, incentives, and resistance.
+              </p>
+              <ul>
+                <li>Map the formal chart and the informal network.</li>
+                <li>Design communication and sponsorship as core work.</li>
+                <li>Expect the social system to decide whether change sticks.</li>
+              </ul>
+            </article>
+            <article class="mode-card">
+              <p class="mode-label">Novel</p>
+              <h3>Unknown unknowns, weak signal, search required</h3>
+              <p>
+                This is not a pure planning problem. Search, iteration, and
+                evidence quality matter more than premature confidence.
+              </p>
+              <ul>
+                <li>Run parallel probes instead of one grand bet.</li>
+                <li>Delegate technical judgement close to the work.</li>
+                <li>Integrate disciplines early instead of throwing work over walls.</li>
+              </ul>
+            </article>
+          </div>
+
+          <aside class="search-note">
+            <p class="panel-label">When the terrain is genuinely novel</p>
+            <h3>Analysis alone will not save you.</h3>
+            <p>
+              In rugged search spaces, progress comes from parallel experiments,
+              trial-and-error learning, strong technical delegation,
+              cross-domain cooperation, and enough time to let a better answer
+              emerge.
+            </p>
+          </aside>
+        </section>
+
+        <section class="section reveal" id="operating">
+          <div class="section-heading">
+            <p class="eyebrow">Operating System</p>
+            <h2>The environment I want around high performers</h2>
+            <p>
+              High performers do not need more chaos wrapped in prestige
+              language. They need a system that makes good work easier and bad
+              decisions harder.
+            </p>
+          </div>
+
+          <div class="operating-grid">
+            <article class="operating-card">
+              <span>1</span>
+              <h3>Turn strategy into specific outcomes</h3>
+              <p>
+                Every major initiative should make a strategic change legible in
+                operational terms.
+              </p>
+            </article>
+            <article class="operating-card">
+              <span>2</span>
+              <h3>Design the service before scaling the platform</h3>
+              <p>
+                A prestigious tool cannot rescue a weak process, unclear
+                ownership, or absent source of truth.
+              </p>
+            </article>
+            <article class="operating-card">
+              <span>3</span>
+              <h3>Build product journeys that feel familiar</h3>
+              <p>
+                Adoption improves when requests, approvals, support, and
+                escalation follow patterns users already understand.
+              </p>
+            </article>
+            <article class="operating-card">
+              <span>4</span>
+              <h3>Make progress visible every week</h3>
+              <p>
+                Short objectives, open boards, and information radiators create
+                alignment without performative reporting.
+              </p>
+            </article>
+            <article class="operating-card">
+              <span>5</span>
+              <h3>Pick partners like collaborators, not commodities</h3>
+              <p>
+                Fit, delivery attitude, and operating clarity matter more than
+                the cheapest initial price.
+              </p>
+            </article>
+            <article class="operating-card">
+              <span>6</span>
+              <h3>Reward reusable learning</h3>
+              <p>
+                Documentation, mentoring, templates, and post-project learning
+                must count as real work.
+              </p>
+            </article>
+          </div>
+
+          <blockquote class="closing-quote">
+            <p>
+              The job is not to be the smartest person in the room. The job is
+              to design an environment where smart people can deliver reliable
+              value together.
+            </p>
+          </blockquote>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Team Conditions</p>
+            <h2>High performance is designed, maintained, and easy to lose</h2>
+            <p>
+              Performance is not permanent. It decays when goals are muddy,
+              roles are vague, or people are expected to carry ambiguity alone.
+            </p>
+          </div>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <h3>Prioritised goals</h3>
+              <p>Teams need an order of importance, not a wall of equal priorities.</p>
+            </article>
+            <article class="team-card">
+              <h3>Competency-driven values</h3>
+              <p>Values should describe the kind of work the organisation actually needs.</p>
+            </article>
+            <article class="team-card">
+              <h3>Rules of the game</h3>
+              <p>Escalation, ownership, and decision rights should be explicit.</p>
+            </article>
+            <article class="team-card">
+              <h3>Role clarity</h3>
+              <p>Ambiguous roles create duplicated work, silent gaps, and politics.</p>
+            </article>
+            <article class="team-card">
+              <h3>Process clarity</h3>
+              <p>People perform better when recurring work has a stable operating path.</p>
+            </article>
+            <article class="team-card">
+              <h3>Interpersonal wellbeing</h3>
+              <p>Trust, respect, and recovery are part of delivery capacity, not extras.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal" id="learning">
+          <div class="section-heading">
+            <p class="eyebrow">Learning Loops</p>
+            <h2>Different work needs different ways of learning</h2>
+            <p>
+              If everything depends on tacit knowledge, the organisation forgets
+              at the same rate it ships. Good CTO work codifies, teaches, and
+              rewards what should outlive the current team.
+            </p>
+          </div>
+
+          <div class="learning-grid">
+            <article class="learning-card">
+              <p class="learning-label">Execution projects</p>
+              <h3>Standardise what should be stable</h3>
+              <ul>
+                <li>Audits, quality measures, and deviation analysis.</li>
+                <li>Process templates, decision policies, training, workshops.</li>
+                <li>Recognition for reuse, consistency, and quiet reliability.</li>
+              </ul>
+            </article>
+            <article class="learning-card">
+              <p class="learning-label">Change projects</p>
+              <h3>Make adoption learnable</h3>
+              <ul>
+                <li>Stakeholder maps, process maps, and decision logs.</li>
+                <li>Manager enablement, cross-functional working groups, skills matrices.</li>
+                <li>Visible sponsorship, time for adoption work, reward for shared progress.</li>
+              </ul>
+            </article>
+            <article class="learning-card">
+              <p class="learning-label">Novel projects</p>
+              <h3>Treat uncertainty as search, not failure</h3>
+              <ul>
+                <li>Experiment logs, prototype reviews, lightweight PDCA loops.</li>
+                <li>Pilot teams, technical talks, mixed-discipline exploration.</li>
+                <li>Seed budgets and public learning reviews for well-documented bets.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <footer class="footer reveal">
+          <p>
+            Technical depth still matters. The difference is that executive
+            leadership expands the surface area: users, incentives, partners,
+            governance, and the quality of decisions between teams.
+          </p>
+        </footer>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
