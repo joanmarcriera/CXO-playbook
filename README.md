@@ -1,5 +1,7 @@
 # CTO Playbook
 
+**Live site:** [cxo.riera.co.uk](https://cxo.riera.co.uk)
+
 Static site for a CTO/CXO field guide built from local notes, with the raw document archive kept out of git.
 
 ## Local preview
